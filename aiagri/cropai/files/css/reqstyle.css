@@ -1,0 +1,28 @@
+body{
+    background-color:#CCFFCC;
+    color:Red;
+    width:100%;
+    transition:0.5s;
+}
+header{
+    background-color:#FFF;
+    font-family:Rockwell;
+    color:Green;
+    text-align:center;
+    position:fixed;
+    width:100%;
+    transition:0.7s;
+    letter-spacing:5px;
+    word-spacing:12px;
+    border-bottom:8px dotted #000;
+    opacity:0.8;
+}
+#main{
+    clear:both;
+    padding-top:160px;
+    margin:25px;
+    font-family:Calibri;
+}
+table,th,td{
+    border:1px solid #000;
+}

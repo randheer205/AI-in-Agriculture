@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI AGRI</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'agri-icon.png' %}">
+</head>
+<body>
+    <header><h1>Welcome To Agriculture with AI</h1></header>
+    <div id="main">
+        <div class="nav" >
+            <a href="#" >Home</a><br>
+            <a href="about">About</a><br>
+        </div>
+        <div class="data" style="background-image: url({% static 'crops.jpg' %});background-repeat: no-repeat;background-attachment: fixed;
+  background-size: cover;">
+            <br>According to weather forecasting and given soil value Following Crops would be profitable in this region.
+            <ul>
+                <li>Rice</li>
+                <li>Sugarcane</li>
+                <li>Soyabean</li>
+                <li>Jowar</li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="data1" style="background-image: url({% static 'soil.jpg' %});background-repeat: no-repeat;background-attachment: fixed;
+  background-size: cover;">
+            <h3>Soil Status: </h3><br>
+            Currently No soil data available at the moment.<br>
+            According to <a href="http://www.iiss.nic.in">IISS</a> pH Status of following region is shown.But no further data is available.<br>
+            <a href="{% static 'ph.jpg' %}" ><img src="{% static 'ph.jpg' %}" alt="" style="padding:10px;width:100px;height:100px;"></a><br>
+            Common ingrediants for crops:<br>Nutrition and Fertilizer Requirements: Nitrogen<br>Nutrition and Fertilizer Requirements: Sulphur<br> Nutrition and Fertilizer Requirements: Potassium <br>Nutrition and Fertilizer Requirements: Micronutrients
+            <br>
+            <a href="req"> Common Requirements for given crops check here.</a>
+        </div>
+        <div class="data2" style="background-image: url({% static 'weagif1.gif' %});background-repeat: no-repeat;background-attachment: fixed;
+  background-size: cover;">
+            <h3>Weather Conditions:</h3>
+            <img src="{% static 'weagif1.gif' %}" alt="" style="width:55px;height:55px;float:left;opacity:0.9;"><br>
+            Current weather conditions at this location.:-  <a href="https://colab.research.google.com/drive/1b8nG-WjyDxCfiRWTQjWpM6O5lbjtmpDc#scrollTo=WMm3RZ0BHIb9">Click Here</a><br>
+            <br>
+            <img src="{% static 'wea.png' %}" alt="">
+            <!--<a style="float:left;padding-left:10px;padding-right:5px;">Mean Pressure<br> Wind Speed<br>Humidity<br>Mean Temp</a>
+            {% for rd in res %}
+                   :<a style="padding:8px;"> {{rd}}</a><br>
+            {% endfor %}
+            <!---<form action="pred" method="POST">
+                {% csrf_token %}
+                <br>Enter Location : <input type="text" name="cityname">
+                <input type="submit" value="Submit">
+            </form>-->
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI AGRI</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'agri-icon.png' %}">
+</head>
+<body>
+    <header><h1>Welcome To Agriculture with AI</h1></header>
+    <div id="main">
+        <div class="nav" >
+            <a href="#" >Home</a><br>
+            <a href="about">About</a><br>
+        </div>
+        <div class="data">
+            {% for cs in c %}
+                Predicted Crop:{{cs}}
+            {% endfor %}
+    </div>
+</body>
+</html>
